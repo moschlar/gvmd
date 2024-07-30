@@ -3979,17 +3979,4 @@ get_vt_verification_collation ();
 void
 set_vt_verification_collation (const char *);
 
-
-/* Inter-Process communication */
-
-typedef enum {
-  SEMAPHORE_SCAN_UPDATE = 0
-} semaphore_index_t;
-
-int
-init_semaphore_set ();
-
-int
-semaphore_op (semaphore_index_t, short int, time_t);
-
 #endif /* not _GVMD_MANAGE_H */
