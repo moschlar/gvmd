@@ -10936,7 +10936,7 @@ buffer_aggregate_xml (GString *xml, iterator_t* aggregate, const gchar* type,
       g_array_free (group_c_sums, TRUE);
 
       g_tree_destroy(subgroup_c_counts);
-    };
+    }
 }
 
 /**
@@ -13513,7 +13513,7 @@ handle_get_info (gmp_parser_t *gmp_parser, GError **error)
                          "</cert_ref>",
                          get_iterator_name (&cert_advs),
                          cert_bund_adv_info_iterator_title (&cert_advs));
-                  };
+                    }
                   cleanup_iterator (&cert_advs);
 
                   init_cve_dfn_cert_adv_iterator (&cert_advs,
@@ -13530,7 +13530,7 @@ handle_get_info (gmp_parser_t *gmp_parser, GError **error)
                                          get_iterator_name (&cert_advs),
                                          dfn_cert_adv_info_iterator_title
                                           (&cert_advs));
-                  };
+                    }
                   cleanup_iterator (&cert_advs);
                 }
               else
@@ -16017,7 +16017,7 @@ handle_get_resource_names (gmp_parser_t *gmp_parser, GError **error)
       get_resource_names_data_reset (get_resource_names_data);
       set_client_state (CLIENT_AUTHENTIC);
       return;
-    };
+    }
 
   ret = init_resource_iterator (&resource, &get_resource_names_data->get);
   if (ret)
